@@ -122,6 +122,7 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-app">Scenarios</li>
+              <li data-filter=".filter-client">Client Area</li>
               <li data-filter=".filter-card">Personas</li>
               <li data-filter=".filter-web">Architecture</li>
             </ul>
@@ -129,10 +130,25 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up">
+          <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item filter-client">
+            <li>Client Area</li>
+            <br>
+            <br>
+			      <p>
+              InterFlight é um sistema onde tem como objetivo permitir mostrar em tempo real não só um conjunto de voos que estão a ser realizados na Europa mas também um conjunto de voos já decorridos, aos quais são gravados numa base de dados.
+              On the interface, the user has the possibility to select fights that started on a Country from Europe or select a certain type of plane model.
+              The API that we used is from OpenSky and it allows us to recieve data from flights in real time, sometimes with a delay that can cause some delays or problems in InterFlight.
+
+            </p>
+         
+          </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item filter-app">
+            <li>Scenarios</li>
+            <br>
+            <br>
 			      <p>
-              Tracking of All Flightd:
+              Tracking of All Flight:
             </p>
             <ul>
 			  <li> Possibility to display information about all flights over Europe.</li>
@@ -153,8 +169,11 @@
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item filter-card">
+            <li>Personas</li>
+            <br>
+            <br>
 			<p>
-              Four personas were specified:
+              Three personas were specified:
             </p>
             <ul>
 			  <li> Zé Bilhas , 54 years old</li>
@@ -174,16 +193,12 @@
             <p>
               User that wants to search for airplanes nearby her location.
             </p>
-     <ul>
-       <li>  José Saraiva</li>
-     </ul>
-     <p> User curious about if the area he is in is an airplane traffic zone</p>
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item filter-web">
-           <p>
-              System Architecture:
-           </p>
+            <li>System Architecture</li>
+            <br>
+            <br>
            <img src="assets/img/portfolio/esArch.png" alt="Arquitetura InterFlight" width="600" height="600">
           </div>
 
@@ -191,6 +206,66 @@
 
       </div>
     </section><!-- End Portfolio Section -->
+
+        <!-- ======= Portfolio Section ======= -->
+        <section id="portfolio" class="portfolio">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title">
+              <h2>Weekly Timeline Report</h2>
+              </div>
+
+    
+              <div class="col-lg-6 pt-4 pt-lg-0 portfolio-item filter-client">
+                <li>First Week (3 May)</li>
+                <br>
+                <br>
+                <p>
+                  The first week, the priority was to choose the theme and the use cases of the project.
+                  The majority of the work was done to setup the enviroment in code ua.
+                </p>
+                <br>
+                <br>
+                <li>Third Week (17 May)</li>
+                <br>
+                <br>
+                <p>
+                  At the end of the Third week, we already had the basic structure for the architecture with some user cases and topics defined. Also there was a basic implementation of the backend with the Sensor application consuming the OpenSky API and a basic implementation of the application of Interflight with
+                  a basic database integration and docker.
+                </p>
+                <li>Fifth Week (31 May)</li>
+                <br>
+                <br>
+                <p>
+                  By the fifth week, there was already big improvements on the backend and also major development on the pipeline for Jenkins to allow continuous integration and continuous delivery.
+                </p>
+                <br>
+                <br>
+                <li>Sixth Week (7 June)</li>
+                <p>
+                  On the sixth week, there was a basic implementation for the Behaviour Driven Development with the use of Cucumber, there was also some improvments mande on the backend, jenkins pipeline, and a basic frontend using react. 
+                </p>
+                <br>
+                <br>
+                <li>Seventh Week (14 June)</li>
+                <br>
+                <br>
+                <p>
+                  At the seventh week, there was little improvements made to the backend(server sent events) and jenkins pipeline, but this was the week where ELK had a basic implementation, improvements on testing, and major improvements on frontend React.
+                </p>
+                <br>
+                <br>
+                <li>Eight Week (21 June)</li>
+                <br>
+                <br>
+                <p>
+                  The last week, was basically checking if all the implementations were working as intended with minor improvements on the backend and some development with ELK. 
+                </p>
+                <br>
+                <br>
+              </div>
+
+        </section><!-- End Portfolio Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">

@@ -193,6 +193,39 @@
       </div>
     </section><!-- End Portfolio Section -->
 
+  <!-- ======= Portfolio Section ======= -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-title">
+        <h2>Architecture<h2>
+      </div>
+      <br>
+
+      <img src="assets/img/portfolio/archComplete.png" width="1000" height="800">
+      <br>
+      <br>
+      <br>
+
+      <li><b>Sensors</b> is an independent Spring boot application that performs an http request to the opensky API to retrive data relating on going fligths.
+        This data is processed and published as events into 3 <b>Kafka</b> topics. </li>
+        <br>
+        <li><b>InterFlight</b> is a Spring boot application with 3 independent services. Each service consumes events from one or more Kafka topics</li>
+        <br>
+
+        <li>The historic service utilizes a <b>postgreSQL</b> database to persist records</li>
+        <br>
+
+        <li>The users interact with the Application trough a <b>React</b> front end that comunicates with the Interflight application through a <b>REST</b> interface or
+        <b>SSE</b> (in the case of the realtime use case)</li>
+        <br>
+
+        <li>The System logs important occurrences utilizing a socket. The logs are sent using <b>LogStash</b> and received in <b>ElasticSearch</b> and can be visualized in <b>Kibana</b></li>
+        <br>
+        
+        <li>The system is deployed using <b>Jenkins</b> and independent <b>Docker</b> containers</li>
+  </section><!-- End Portfolio Section -->
+
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">
           <div class="container" data-aos="fade-up">

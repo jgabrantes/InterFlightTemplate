@@ -226,6 +226,141 @@
         
         <li>The system is deployed using <b>Jenkins</b> and independent <b>Docker</b> containers</li>
   </section><!-- End Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <div class="container" data-aos="fade-up">
+      <div class="section-title">
+        <h2>API Endpoints<h2>
+          <div class="accordion" id="accordionExample" style="margin-top: 50px;">
+            <div class="card">
+              <div class="card-header" id="headingOne">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                /flights?limit=number
+                </button>
+              </h2>
+              </div>
+            
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="">
+              <div class="card-body">
+                Este caminho permite obter os aviões que estão atualmente em voo e é possível pedir um limite ao mesmo. A resposta é um array que contém StateVectors.									</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingTwo">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                /flights/position?latitude=int&amp;longitude=number
+                </button>
+              </h2>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="">
+              <div class="card-body">
+                Este caminho permite obter os aviões que estão atualmente em voo nas latitudes e longitudes indicadas ou relativamente perto. A resposta é um array que contém StateVectors.
+              </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+              <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                /flights/time?startTime=timestamp&amp;finalTime=timestamp									  </button>
+              </h2>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+              <div class="card-body">
+                Este caminho permite obter os aviões que estiveram em voo entre “startTime” e “finalTime”. A resposta é um array que contém Flights.									</div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse4" aria-expanded="false" aria-controls="collapseThree">
+                  /flight?flightId=icao24
+                  </button>
+                </h2>
+              </div>
+              <div id="collapse4" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                Este caminho permite obter um avião através do seu icao de identificação. A resposta é um objeto do tipo Flight.									
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="false" aria-controls="collapseThree">
+                  /statistics/common-routes?limit=number								  
+                </button>
+                </h2>
+              </div>
+              <div id="collapse5" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  Este caminho permite obter os aviões que estiveram em voo entre “startTime” e “finalTime”. A resposta é um array que contém Flights.									</div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="false" aria-controls="collapseThree">
+                  /realtime/average-speed?icao24=icao24								  
+                </button>
+                </h2>
+              </div>
+              <div id="collapse6" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                  Este caminho permite obter a velocidade média de um avião através do seu icao. A resposta é um Float.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="false" aria-controls="collapseThree">
+                  /realtime/track?icao24=icao24							  
+                </button>
+                </h2>
+              </div>
+              <div id="collapse7" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                Este caminho permite obter a rota de um avião através do seu icao.  A resposta é um array que contém Waypoint.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapseThree">
+                  /info/airport-names?icao24=icao24								  
+                </button>
+                </h2>
+              </div>
+              <div id="collapse8" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                Este caminho permite obter o nome de um aeroporto com base no seu icao. A resposta é uma String.
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header" id="headingThree">
+                <h2 class="mb-0">
+                <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapse9" aria-expanded="false" aria-controls="collapseThree">
+                  /landings_socket/landings/								  
+                </button>
+                </h2>
+              </div>
+              <div id="collapse9" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                Este caminho corresponde ao caminho do WebSocket criado para a disponibilização de notificações. Quando um avião aterra essa informação é enviada através do socket. A resposta é um mapa que tem como key um país e value uma lista de String contendo o icao dos aviões que aterraram nesse mesmo país.
+                </div>
+              </div>
+            </div>
+
+          </div>
+      
+    </section>
 
         <!-- ======= Portfolio Section ======= -->
         <section id="portfolio" class="portfolio">

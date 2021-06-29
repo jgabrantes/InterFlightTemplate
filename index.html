@@ -250,22 +250,7 @@
         
         <li>The system is deployed using <b>Jenkins</b> and independent <b>Docker</b> containers</li>
   </section><!-- End Portfolio Section -->
-  <script>
-    var acc = document.getElementsByClassName("accordion");
-    var i;
-    
-    for (i = 0; i < acc.length; i++) {
-      acc[i].addEventListener("click", function() {
-        this.classList.toggle("active");
-        var panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-          panel.style.display = "none";
-        } else {
-          panel.style.display = "block";
-        }
-      });
-    }
-    </script>
+  
   <section id="portfolio" class="portfolio">
     <div class="container" data-aos="fade-up">
       <div class="section-title">
@@ -295,7 +280,22 @@
         <div class="panel">
           <p>et all Planes that are curently overing the tracked region </p>
         </div>
-      
+        <script>
+          var acc = document.getElementsByClassName("accordion");
+          var i;
+          
+          for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var panel = this.nextElementSibling;
+              if (panel.style.display === "block") {
+                panel.style.display = "none";
+              } else {
+                panel.style.display = "block";
+              }
+            });
+          }
+          </script>
     </section>
 
         <!-- ======= Portfolio Section ======= -->
